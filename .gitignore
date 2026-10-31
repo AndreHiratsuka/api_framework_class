@@ -1,0 +1,9 @@
+node_modules/
+.env
+data/
+
+# Python (FastAPI capstone)
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
