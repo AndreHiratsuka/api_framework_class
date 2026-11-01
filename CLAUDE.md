@@ -42,6 +42,11 @@ Run from the project root, e.g. `node class_js/module_1/class_3/server.js`.
 3. **The user writes and runs the code.**
 4. **Review.** Point out each problem: what's wrong, why, a hint, and the related concept or chapter.
    **Never edit the user's code files.** The user fixes it and you re-check.
+   - **NOTES.md is different**: when the user writes a question under "What confused me", answer
+     it directly inside `NOTES.md`, right under their question, prefixed **Claude:** so it's clear
+     whose words are whose. Keep the file clean while doing this — one reflection list (bold
+     question + the user's answer beneath, no leftover comment-copy artifacts), no duplicated
+     question blocks.
 5. **Quiz.** Use the chapter's "Quiz da aula" questions (answers are in its "Gabarito"), asked with
    AskUserQuestion: max 4 questions per call, so 5 questions take two calls. Don't mark any option as
    recommended and don't hint at the answer. Explain each wrong answer afterwards.
