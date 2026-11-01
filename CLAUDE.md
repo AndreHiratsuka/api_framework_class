@@ -42,15 +42,22 @@ Run from the project root, e.g. `node class_js/module_1/class_3/server.js`.
 3. **The user writes and runs the code.**
 4. **Review.** Point out each problem: what's wrong, why, a hint, and the related concept or chapter.
    **Never edit the user's code files.** The user fixes it and you re-check.
-   - **NOTES.md is different**: when the user writes a question under "What confused me", answer
-     it directly inside `NOTES.md`, right under their question, prefixed **Claude:** so it's clear
-     whose words are whose. Keep the file clean while doing this — one reflection list (bold
-     question + the user's answer beneath, no leftover comment-copy artifacts), no duplicated
-     question blocks.
-5. **Quiz.** Use the chapter's "Quiz da aula" questions (answers are in its "Gabarito"), asked with
+   - **NOTES.md is different**: when the user writes a question under "What confused me", or their
+     Reflection answer is missing/wrong, write the explanation or hint directly inside `NOTES.md`
+     (right under their question/answer), prefixed **Claude:**, instead of leaving it only in chat
+     — so it stays as part of their study notes. This never replaces the user's own answer line;
+     it sits alongside it, and the user still writes/revises their own wording. Keep the file
+     clean while doing this — one reflection list (bold question + the user's answer beneath, no
+     leftover comment-copy artifacts), no duplicated question blocks.
+5. **Clean the Reflection section once the class is finished** (every Reflection question has a
+   correct/complete answer) — right before the quiz. For each question: merge the user's own
+   wording with any **Claude:** explanation into one improved answer in the user's voice, concise
+   (don't pad it), then delete the **Claude:** comment entirely. Only Reflection gets this
+   cleanup — leave "What confused me" **Claude:** answers in place always, they're not touched.
+6. **Quiz.** Use the chapter's "Quiz da aula" questions (answers are in its "Gabarito"), asked with
    AskUserQuestion: max 4 questions per call, so 5 questions take two calls. Don't mark any option as
    recommended and don't hint at the answer. Explain each wrong answer afterwards.
-6. **Commit** once the class is reviewed and fixed, one commit per class: `m1c3: first express server`.
+7. **Commit** once the class is reviewed and fixed, one commit per class: `m1c3: first express server`.
 
 ## Reading the book
 
